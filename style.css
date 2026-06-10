@@ -9,7 +9,7 @@ body {
     flex-flow: column;
     color: #fff;
     font: normal 14px Roboto, sans-serif;
-    background-color: #282a36;
+    background-color: #000;
 }
 * {
     font-variant-ligatures: none;
@@ -24,7 +24,7 @@ body {
 #controls,
 #copy,
 footer {
-    background-color: #3b3b47;
+    background-color: #000;
     z-index: 10;
 }
 
@@ -45,16 +45,16 @@ body.readonly:not(:hover) #footer {
 }
 
 #copy-link {
-    font-family: JetBrainsMono, sans-serif;
+    font-family: JetBrainsMono, monospace, sans-serif;
     width: 100%;
 }
 
 /* Styling */
 .shadow-bottom {
-    box-shadow: rgba(0, 0, 0, 0.15) 0 3px 10px;
+    border-bottom: 1px solid #ccc;
 }
 .shadow-top {
-    box-shadow: rgba(0, 0, 0, 0.15) 0 -3px 10px;
+    border-top: 1px solid #ccc;
 }
 a,
 a:hover,
@@ -73,17 +73,21 @@ a:focus {
 
 .CodeMirror {
     height: 100%;
-    font-family: JetBrainsMono, sans-serif;
+    font-family: JetBrainsMono, monospace, sans-serif;
 }
 h1 {
-    font: normal 24px JetBrainsMono, sans-serif;
+    font: normal 24px JetBrainsMono, monospace, sans-serif;
     white-space: nowrap;
 }
 .mono {
-    font-family: JetBrainsMono, sans-serif;
+    font-family: JetBrainsMono, monospace, sans-serif;
 }
 .pink {
     color: #ff79c6;
+}
+
+.cm-s-dracula.CodeMirror, .cm-s-dracula .CodeMirror-gutters {
+	background-color: #000 !important;
 }
 
 /* Modals */
@@ -95,7 +99,8 @@ h1 {
     display: block;
 }
 .modal-content {
-    background-color: #3b3b47;
+    background-color: #000;
+	border: 1px solid #ccc;
     max-width: 600px;
     max-height: 100vh;
     overflow-y: auto;
@@ -139,7 +144,7 @@ h1 {
 button,
 input[type='text'],
 input[type='search'] {
-    background-color: #3b3b47 !important;
+    background-color: #000 !important;
     color: #fff !important;
     border-radius: 2px !important;
     border: 1px solid #ccc !important;
@@ -163,7 +168,7 @@ button:hover {
     background-color: rgba(255, 255, 255, 0.1) !important;
 }
 .ss-content {
-    background-color: #282936;
+    background-color: #000;
     color: #dedede;
     font-size: 14px;
 }
